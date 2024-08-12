@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "frida-inject": "^0.3.0",
-    "frida-mono-api": "0.0.5"
+    "frida-inject": "github:Ruptura-Josh/frida-inject",
+    "frida-mono-api": "github:freehuntx/frida-mono-api"
   }
 }
