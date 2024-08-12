@@ -8,11 +8,11 @@ checkout repo
 npm i
 ```
 
-**To print out the methods and fields of the "TakeDamage" class in the "198X" game:**
+**To print out the methods and fields of the a class in a game:**
 ```
-node injector.js 198X.exe enumerator-test.js
+node injector.js <process-name> enumerator-test.js
 ```
-Sample output
+Example output
 ```
 {
     "address": "0xe8733e0",
@@ -37,12 +37,12 @@ Sample output
 
 **To apply my hacks to "198X":**
 ```
-node injector.js 198X.exe 198X-hacks.js
+node injector.js 198X.exe example-hacks.js
 ```
 
 Sample output:
 ```
-Injected "198X-hacks.js" into 198X.exe
+Injected "example-hacks.js" into 198X.exe
 
 [*] STARTED PLAYING: The Runaway
 [+] Collision! Removing speed loss and disabling wipeout
