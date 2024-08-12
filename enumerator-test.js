@@ -1,7 +1,7 @@
 import Enumerator from './enumerator.js'
 
 // mono class we want to enumerate
-var takeDamage = Enumerator.enumerateClass('TakeDamage');
+var classData = Enumerator.enumerateClass('CCTV');
 
 // print it out
-Enumerator.prettyPrint(takeDamage);
+Enumerator.prettyPrint(classData);
