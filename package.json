@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "frida-inject": "github:Ruptura-Josh/frida-inject",
-    "frida-mono-api": "github:freehuntx/frida-mono-api"
+    "frida-mono-api": "github:Titoot/frida-mono-api"
   }
 }

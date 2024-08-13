@@ -234,7 +234,11 @@ let Enumerator = {
         var field = this.fields[fieldName];
         var addr = parseInt(instance) + parseInt(field.offset, 16);
         return Enumerator.setFieldValue(addr, field.type, value);  // "this.setFieldValue" does not work
-      }
+      },
+
+      getInstanceSize: function() {
+        return MonoApi.mono_class_instance_size(klass);
+      },
     }
     return ret;
   },
