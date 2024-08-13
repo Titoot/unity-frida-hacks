@@ -1,6 +1,6 @@
 **Horrible setup/installation notes:**
 
-install nodejs 13 for windows - https://nodejs.org/en/download/current/
+install nodejs 20 for windows - https://nodejs.org/en/download/
 
 checkout repo
 
