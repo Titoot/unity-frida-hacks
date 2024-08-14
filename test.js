@@ -18,3 +18,8 @@ MonoApiHelper.Intercept(GameManager.address, 'UpdateScore', {
 	console.log('-----------------------------------------------\n');
   	},
 });
+
+MonoApiHelper.Replace(GameManager.address, 'UpdateLives', new NativeCallback(() => {
+	console.log("UpdateLives call replaced")
+	return; 
+   }, 'void', []));
