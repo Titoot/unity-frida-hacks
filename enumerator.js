@@ -205,12 +205,12 @@ let Enumerator = {
   getFields: function(monoClass) {
     var ret = {};
     var fields = MonoApiHelper.ClassGetFields(monoClass)
-    for (var i = fields.length - 1; i >= 0; i--) {
+    for (var i = 0; i < fields.length; i++) {
       var field = fields[i];
       var name = MonoApiHelper.FieldGetName(field, monoClass);
       ret[name] = {
-        address:  '0x' + parseInt(field).toString(16),
-        offset:   '0x' + this.readByte(parseInt(field) + 12).toString(16),
+        address:  `0x${parseInt(field).toString(16)}`,
+        offset:   `0x${(parseInt(MonoApi.mono_field_get_offset(field))).toString(16)}`,
         type:     this.getFieldType(field)
       }
     }
